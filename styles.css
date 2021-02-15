@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+:root {
+  font-size: 62.5%;
+  --main-background: #fffffe;
+  --card-background: #eff0f3;
+  --main-headlines: #0d0d0d;
+  --sub-headliness: #2a2a2a;
+  --buttons: #ff8e3c;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+header { 
+  background: var(--buttons);
+  width: 100%;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--sub-headliness);
+  padding: 0.8rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section, aside {
+  width: 49%;
+  height: calc(100vh - 110px);
+  margin: 0.5rem;
+}
+
+.generator {
+  background: var(--main-background);
+}
+
+.generator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.generator-container .color {
+  width: 45vw;
+  height: 50vh;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.generator-container .buttons button {
+  background: var(--buttons);
+  color: var(--main-headlines);
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid var(--sub-headliness);
+  width: 100px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.favorites-container {
+  grid-column: 2 / 4;
+  padding-top: 2rem;
+}
+
+.favorites-container h2 {
+  font-size: 2rem;
+  color: var(--main-headlines);
+  text-align: center;
+}
+
+.favorites-container span {
+  color: var(--sub-headliness);
+  font-size: 1.6rem;
+}
+
+.favorites-container .favorite-colors {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 160px);
+  overflow-y: scroll;
+  border-radius: 6px;
+  padding: .8rem;
+}
+
+.favorite-color {
+  width: 70px;
+  min-height: 20px;
+  background:grey;
+  position: relative;
+  margin: 1.4rem 4rem;
+}
+
+.favorite-color span {
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  font-size: 1.6rem;
+  width: 200px;
+}
+
+.favorite-color span.index {
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  font-size: 1.6rem;
+  width: 200px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: var(--buttons);
+}
+footer p {
+  padding: .5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  section, aside {
+    width: 100%;
+    margin: 0.5rem;
+    border: 1px solid red;
+  }
+
+  section {
+    height: calc(50vh - 60px);
+  }
+
+  .generator-container .color {
+    width: 70vw;
+    height: 25vh;
+    border-radius: 6px;
+    border: 1px solid black;
+  }
+}
