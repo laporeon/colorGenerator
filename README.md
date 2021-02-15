@@ -7,7 +7,7 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/laporeon/colorGenerator?style=for-the-badge)
 
 ![ColorGenerator](https://user-images.githubusercontent.com/34722707/107991026-83257a80-6fb4-11eb-99d5-88c638a36fc7.gif)
-> Web app that generates random RGB colors, made to practice manipulating DOM using JavaScript. 
+> Web app that generates random RGB colors, made to practice manipulating DOM using JavaScript. You can check the demo version <a href="https://c0lor-generator.netlify.app/">here</a>
 
 ## 📄 Adjustments and improvements
 
